@@ -1,0 +1,279 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Horizontal NavMenu */
+.nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	list-style: none;
+	background-color:#00CC00;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	text-align: justify;
+	max-width: 960px;
+	min-width: 810px;
+	z-index: 1;
+}
+
+.nav li {
+float: left;
+padding: 8px 30px;
+text-align: justify;
+font-size:20px;
+z-index: 1;
+}
+
+.nav li a {
+display: block;
+padding: 8px 30px;
+text-decoration: none;
+font-weight: bold;
+color: #000099;
+border-right: 1px solid #ccc;
+text-align: justify;
+z-index: 1;
+}
+
+.nav li a:hover {
+color:#FFFFFF;
+background-color: #006600;
+z-index: 1;
+}
+
+/* Subject header */
+#subject_header {
+	text-align: center;
+	font-size:24px;
+	color: #FFFFFF;
+}
+
+/* Vertical Dropdown NavMenu */
+
+#navMenu, ul, li,  li li {
+	margin:0;
+	padding:0;
+	font-size:14px;
+	z-index: 1;
+}
+
+#navMenu {
+	width:150px;
+	height:27px;
+	z-index: 1;
+}
+
+#navMenu ul {
+	line-height: 25px;
+	z-index: 1;
+}
+
+#navMenu li{
+	list-style:none;
+	position:relative;
+	background:#000066;
+	z-index: 1;
+}
+
+#navMenu li li{
+	list-style:none;
+	position:relative;
+	background: #6d0b44;
+	left:148px;
+	top:-27px;
+	z-index: 1;
+}
+
+#navMenu ul li a {
+	width: 148px;
+	height:25px;
+	display: block;
+	text-decoration:none;
+	text-align: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #ffffff;
+	border:1px solid #eee;
+	z-index: 1;
+}
+
+#navMenu ul ul {
+	position: absolute;
+	visibility: hidden;
+	top:27px;
+	z-index: 1;
+}
+
+#navMenu ul li:hover ul {
+	visibility:visible;
+	z-index: 1;
+}
+
+/* Hover */
+
+#navMenu li:hover {
+	background-color:#945c7d;
+	z-index: 1;
+}
+
+#navMenu ul li:hover ul li a:hover {
+	background-color: #945c7d;
+	z-index: 1;
+}
+
+#navMenu a:hover {
+	font-weight:bold;
+	z-index: 1;
+}
+
+/*additional Hover added Apr 2015 for third level drop down menu*/
+
+#navMenu li li:hover ul li ul li {
+visibility: hidden;
+display: block;
+left: ;
+z-index: 1;
+}
+
+#navMenu li li ul li:hover ul li {
+visibility: visible;
+display: block;
+left: ;
+z-index: 1;
+}
+
+/* Sub Sub Level Css From Here Down */
+
+.Sub_level{
+	position:relative;
+	z-index:0;
+	color:#ffffff;
+	z-index: 1;
+}
+
+.Sub_level:hover {
+	background-color: transparent;
+	z-index:60px;
+	z-index: 1;
+}
+
+.Sub_level ul {
+	position: fixed;
+	width: 150px;
+	background-color: #39a2b8;
+	left:-3000px;
+	visibility: hidden;
+	overflow: visible;
+	z-index: 1;
+}
+
+.Sub_level:hover ul {
+	position: fixed;
+	visibility: visible;
+	top:0px;
+	left:0;
+	height:0;
+	z-index: 1;
+}
+
+/****************************************/
+
+body {
+	padding:0;
+	border:0;
+	margin:0;
+	background-color:#000033;
+}
+
+h1 { 
+margin-top: 0px;
+margin-bottom: 0px;
+border-style: solid;
+border-width: thin;
+color:#FFFFFF;
+font-size: 210%;
+font-family: Times New Roman, Arial, Helvetica, sans-serif;
+background-color: #000066;
+padding:0px;
+min-width:800px;
+max-width:1000px;
+height: 100px;
+}
+
+h2 {
+margin:5px;
+}
+
+h3 {
+margin:5px;
+}
+
+#wrapper {
+	padding: 0;
+	margin:0 auto;
+	width:960px;
+	height:auto;
+	background-color:#000033;
+}
+
+#sideArea {
+	padding:0;
+	margin:0;
+	width: 150px;
+	height: auto;
+	float:left;
+}
+
+#content {
+	padding:0;
+	padding-bottom:15px;
+	margin:0;
+	width: 810px;
+	min-height:400px;
+	height: auto;
+	background-color:#FAF2FE;
+	float:right;
+}
+
+#content p {
+	font-size: 18px;
+	line-height: 24px;
+	font-family: Georgia, "Bitstream Charter", serif;
+	margin:10px;
+}
+
+#footer {
+	clear:both;
+	margin-top:20px;
+	border:1px solid black;
+	padding:5px 0px;
+	font-size:80%;
+	text-align:center;
+	left:0px;
+	bottom:0px;
+	background-color:#666666;
+	width: 810px;
+	float:right;
+}
+
+.clear {
+	clear:both;
+}
+
+/*For FAQ */
+.Group {
+margin:0px;
+padding:0px;
+}
+
+/*index.html style */
+#checkmark_bullets ul {
+list-style-image: url(images/checkmark_green_bulletpoint.png);
+margin: 0px 0px 0px 35px;
+}
+
+
+
+/*Disqus comments for selling a car style */
+#disqus_thread {
+	padding:20px;
+}
