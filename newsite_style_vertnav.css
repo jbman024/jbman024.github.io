@@ -277,3 +277,13 @@ margin: 0px 0px 0px 35px;
 #disqus_thread {
 	padding:20px;
 }
+
+/*Disqus how to comment text - Feb 26 2018*/
+.style8 {font-size: 12px}
+
+/*Small text - Feb 26 2018*/
+.smalltext {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+}
+
