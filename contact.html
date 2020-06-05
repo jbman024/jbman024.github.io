@@ -11,34 +11,7 @@ content="Contact information for DIY Canadian in Hamilton, Ontario. DIY Canadian
 <!-- InstanceBeginEditable name="title" -->
 <title>DIY Canadian How-To Guides for Canadians - Contact Info</title>
 
-<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAW2ko2u1yxFy1-tbZfG9BHyghL5AlU1_s&sensor=false">
-</script>
 
-<script>
-var myCenter=new google.maps.LatLng(43.202555,-79.893261);
-
-function initialize()
-{
-var mapProp = {
-  center:myCenter,
-  zoom:10,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker=new google.maps.Marker({
-  position:myCenter,
-  icon:'checkmark_green_marker.png',
-  title:"CheckMark Tutoring"
-  });
-
-marker.setMap(map);
-
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
 <!-- InstanceEndEditable -->
 
 <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
@@ -148,7 +121,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
   <p>Please contact DIY Canadian through email and you should receive a response within 2 business days. If you would like to talk via phone, please email DIY Canadian with a phone number and you will receive a follow-up call within 2 business days.</p>
   <p>Email: <a href="mailto:thediycanadian@gmail.com?subject=DIY%20Canadian%20Auto%20Email">thediycanadian@gmail.com</a>
     </p><br>
-<div id="googleMap" style="width:500px;height:380px;margin-left:auto;margin-right:auto;z-index:0;"></div>
 </div><!-- End content -->
 <!-- InstanceEndEditable -->
 
